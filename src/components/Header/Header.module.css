@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: rgb(64, 1, 151);
+  background: linear-gradient(270deg, rgba(64, 1, 151, 1) 0%, rgba(255, 255, 255, 1) 55%);
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+  }
+}
